@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "0f2129ee-3305-4509-a3e2-19edc01e01ef",
+		"name": "blog_with_rest_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/post/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Test 6",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Testing 6",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "NA",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/post?title=Test 8&description=Testing 8&author=ABCD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"post"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Test 8"
+						},
+						{
+							"key": "description",
+							"value": "Testing 8"
+						},
+						{
+							"key": "author",
+							"value": "ABCD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update post by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "6",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "Test 7",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Testing 7",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "XYZ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/post/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a post by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/post/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
